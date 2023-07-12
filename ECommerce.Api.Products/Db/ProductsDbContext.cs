@@ -6,7 +6,7 @@ namespace ECommerce.Api.Products.Db
     {
         private readonly DbContextOptions dbContextOptions;
 
-        public DbSet<Product> Products { get; set; }
+        public DbSet<Db.Product> Products { get; set; }
         public ProductsDbContext(DbContextOptions dbContextOptions) : base(dbContextOptions)
         {
             this.dbContextOptions = dbContextOptions;
