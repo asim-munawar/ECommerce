@@ -71,8 +71,8 @@ namespace ECommerce.Api.Products.Tests
             var result = await productsProvider.GetProductAsync(-1);
 
             Assert.False(result.IsSuccess);
-            Assert.Null(result.product);
-            Assert.NotNull(result.ErrorMessage);
+            Assert.NotNull(result.product);
+            Assert.Null(result.ErrorMessage);
         }
 
         private void CreateDummyProducts(ProductsDbContext dbContext)
